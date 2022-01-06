@@ -1,0 +1,1612 @@
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing: border-box;
+}
+p{
+	margin : 0;
+}
+body{
+	overflow-X : hidden;
+	color : #000;
+}
+sidebar i{
+	pointer-events:none;
+}
+
+textarea {
+  resize: none;
+}
+
+
+body{
+	background-color : rgb(80,80,85);
+}
+
+.bodywrap {
+	height : 100%;
+	background-color : rgb(80,80,85);
+}
+
+header {
+	top : 0px;
+	padding : 7px;
+	align-items :center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	min-height: 58px;
+	background-color: rgb(67, 67, 73);
+	color : rgb(244, 239, 255);
+	display : flex;
+	z-index : 50;
+	width : 100%;
+	height : 7.5%;
+}
+
+header h1 {
+	margin : auto;
+	font-size: 30px;
+}
+
+header a {
+	text-decoration: none;
+	color : black;
+}
+
+
+/*섹션 기본 틀ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.sebu {
+
+		min-height : 350px;
+		height : 92%;
+		max-width : 630px;
+		border : 3px solid rgb(55, 55, 55);
+		text-align: center;
+		margin : 0 auto;
+		position : absolute;
+		left : 50.7%;
+		transform : translateX(-50%);
+		transition: 0.3s;
+		border-radius : 10px;
+		width : 630px;
+}
+
+/*글 상세 창 형식ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+.docform {
+	display : none;
+	height : 100%;
+}
+
+.docsectionwrap .titlebar {
+	background-color: rgb(67, 67, 73);
+	padding : 5px;
+	font-weight: bold;
+	text-align: left;
+	padding-left : 30px;
+	font-size: 25px;
+	border-bottom : dashed rgb(50, 50, 55) 2px;
+	display : flex;
+	justify-content: space-between;
+}
+
+.doDocThumb{
+	display : none;
+	}
+.delDocThumb{
+	display : none;
+	}
+.docThumb i {
+	font-size: 25px;
+	margin-top : 3px;
+}
+
+.doclikebtn {
+	background : none;
+	background-color : none;
+	border : none;
+	display : flex;
+}
+
+li {
+	list-style: none;
+}
+
+.docsectionwrap {
+	height : 60%;
+	overflow : hidden;
+}
+
+.docsectionwrap .imgline {
+		margin : 0px auto;
+		margin-bottom : 0px;
+		overflow : hidden;
+		padding : 20px 0;
+}
+
+.docsectionwrap .imgline ul {
+	display : flex;
+	justify-content: space-between;
+	transition-duration : 0.32s;
+
+}
+
+
+.docsectionwrap .imgline ul li{
+	padding : 0px;
+	margin : 0 10px;
+	transition-duration: 0.3s;
+	transform : translateX(69px);
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	width : 456.5px;
+	
+}
+
+.docsectionwrap .imgline ul li img{
+	border-radius : 12px;
+	border : 1px solid black;
+}
+
+
+/*언더바 관련ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.docform article {
+	border : 1px solid black;
+}
+
+.docform article .maker {
+	border : none;
+	border-bottom : 1px solid black;
+	display : flex;
+	justify-content: space-between;
+	margin : 10px;
+	padding-bottom : 10px;
+}
+
+.docform article .maker .makername {
+	font-size: 25px;
+	margin-left : 5px;
+	text-align: left;
+}
+.makernamebox{
+	display : flex;
+	justify-content: space-between;
+}
+
+.makernamebox form{
+	margin-left : 350px;
+}
+.makernamebox form button{
+	background: none;
+	border: none;
+}
+.deldocnum {
+	display : none;
+}
+
+.docform article .maker .makingdate {
+	margin-top:25px;
+	font-size: 15px;
+	text-align: left;
+}
+
+.docform article .maker .left {
+	display : flex;
+}
+
+
+.docform .underbar {
+	position : absolute;
+	height : 40%;
+	bottom : 0;
+	background-color : rgb(122, 122, 122);
+	width : 98%;
+	left : 1%;
+	border-radius : 15px 15px 0 0;
+}
+
+.docform .uped {
+	position : absolute;
+	height : 90%;
+	bottom : 0;
+	background-color : rgb(122, 122, 122);
+	width : 98%;
+	left : 1%;
+	border-radius : 15px 15px 0 0;
+}
+
+.docform .underbarwrap {
+	height : 97%;
+	overflow : hidden;
+}
+
+
+.before_btn, .after_btn {
+	position : relative;
+	padding : 40px 20px;
+	border : 1px solid gray;
+}
+
+.before_btn {
+	position : fixed;
+	left : 6.3%;
+	top : 40%;
+	font-weight: bold;
+	background-color : rgba(190, 190, 190, 0.4);
+	border-radius: 11px;
+	display : none;
+}
+
+.after_btn {
+	position : fixed;
+	right : 8%;
+	top : 40%;
+	font-weight: bold;
+	background-color : rgba(190, 190, 190, 0.4);
+	border-radius: 11px;
+	box-shadow: none;
+}
+
+button:hover {
+	cursor: pointer;
+	}
+	
+	/*메모 상세 창 형식*/
+	
+	.memoform {
+	height : 100%;
+	display : none;
+	}
+	
+	.memoform .titlebar {
+	background-color: rgb(67, 67, 73);
+	padding : 5px;
+	font-weight: bold;
+	text-align: left;
+	padding-left : 30px;
+	font-size: 25px;
+	border-bottom : dashed rgb(50, 50, 55) 2px;
+	display : flex;
+	justify-content: space-between;
+}	
+
+.memoform .delmemo button{
+	background: none;
+	border: none;
+	transform : translate(30px, -5px);
+}
+.delmemonum {
+	display : none;
+}
+
+.doMemoThumb{
+	display : none;
+	}
+.delMemoThumb{
+	display : none;
+	}
+.memoThumb i {
+	font-size: 25px;
+	margin-top : 3px;
+}
+
+.memolikebtn {
+	background : none;
+	background-color : none;
+	border : none;
+	display : flex;
+}
+
+.memoform .memodoc {
+	height : 55%;
+	background-color : rgb(104, 104, 116);
+	overflow-Y : scroll;
+	text-align: left;
+	padding : 4px;
+}
+	
+.memopic {
+	overflow-X: hidden;
+	width : 100%;
+	height : 39%;
+	position : relative;
+}	
+
+
+.memopic .memopicline {
+	display : flex;
+	margin-top : 8px;
+	position : absolute;
+}
+
+.memopicline li {
+	background-color: rgb(50, 50, 55);
+	margin-right : 7px; 
+	pointer-events : none;
+}
+
+/*회원가입 상세 창 형식*/
+
+
+.joinform {
+	display : none;
+	padding-left : 81px;
+	transition : 0.3s;
+}
+
+.joinform .titlebar {
+	background-color: rgb(67, 67, 73);
+	padding : 5px;
+	font-weight: bold;
+	text-align: left;
+	padding-left : 30px;
+	font-size: 25px;
+	border-bottom : dashed rgb(50, 50, 55) 2px;
+	display : flex;
+	justify-content: space-between;
+}
+
+.joinpage{
+	display : flex;
+	flex-direction: column;
+
+}
+
+.joinpage> input {
+	width : 50%;
+	margin : 15px 14px;
+	padding : 10px;
+}
+
+.joinpage> button {
+	width : 70%;
+	margin : 30px 14px;
+}
+
+.joinpage .joinname{
+	width : 30%;
+}
+
+.joingender {
+	text-align : left;
+}
+
+.joingender input {
+	margin-left : 20px;
+}
+
+.joinpage button {
+	padding : 15px 5px;
+	border-radius : 7px;
+	width : 200px;
+}
+	
+/*프로필 변경 상세 창 형식*/
+.changeprofileform {
+	display : none;
+}
+
+.profilechangepage {
+	display : flex;
+	flex-direction: column;
+}
+.changeprofilepic {
+	display : flex;
+	margin : 15px;
+}
+
+.changeprofileimg {
+	width : 165px;
+	height : 165px;
+	background-color: rgb(67, 67, 73);
+}
+
+.proname {
+	margin : 15px;
+	padding : 0px 15px 25px 15px;
+	font-weight: bold;
+	font-size: 25px;
+}
+.aboutchangeprofilepic {
+	display : flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.changecomment {
+	width : 70%;
+	margin-left : 14px;
+	border-radius : 7px;
+	font-size: 20px;
+	padding : 10px;
+}
+
+.profilechangepage input {
+	width : 70%;
+	margin : 15px 14px;
+	padding : 10px;
+}
+
+.profilechangepage button {
+	padding : 10px 5px;
+	border-radius : 7px;
+	width : 150px;
+	margin : 30px 14px;
+}
+
+.changeprofileform .titlebar {
+	background-color: rgb(67, 67, 73);
+	padding : 5px;
+	font-weight: bold;
+	text-align: left;
+	padding-left : 30px;
+	font-size: 25px;
+	border-bottom : dashed rgb(50, 50, 55) 2px;
+	display : flex;
+	justify-content: space-between;
+}
+
+	
+/*사이드바ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+	.sidebar {
+	height : 92%;
+	min-width : 79px;
+	text-align: center;
+	background-color:rgb(80, 80, 85);
+	border-top : none;
+	position : absolute;
+	left : 0px;
+	z-index: 2;
+    display: flex;
+	transition: 0.3s;
+}
+
+.sidebar .login_btn1 {
+	width : 70px;
+	min-height : 70px;
+	margin-top : 7px !important;
+	background-color : rgb(67, 67, 73);
+	border : 1px white solid;
+	border-radius : 10px;
+	align-items : center;
+	transition:background-color 0.1s, border 0.2s;
+}
+
+.sidebar .login_btn1:hover{
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+/*로그인 페이지*/
+.loginpagewrap {
+	text-align: center;
+}
+
+.add_btn {
+	padding : 7px 20px;
+	margin : 4px auto;
+	border-radius : 5px;
+	border : 1px solid black;
+	background-color : yellow;
+	font-weight: bold;
+	width : 200px;
+}
+
+.loginpagewrap form>*{
+	margin : 10px;
+}
+
+.loginpagewrap form>:nth-child(1){
+	margin : 10px;
+	margin-top : 30px;
+}
+
+.loginpagewrap form:nth-child(3){
+	margin : 2px;
+}
+
+
+input {
+	font-size: 20px;
+	border-radius : 7px;
+	box-shadow: none;
+	text-shadow: none;
+	padding : 3px;
+}
+
+.lpbtn {
+	padding : 7px 20px;
+	margin : 4px auto;
+	border-radius : 5px;
+	border : 1px solid black;
+	background-color : yellow;
+	font-weight: bold;
+}
+
+.lpbtn:hover {
+	cursor: pointer;
+	border : 1px solid black;
+}
+
+
+#loginpage .close {
+	border : 1px solid black;
+	background-color: lightgray;
+	position : absolute;
+	margin-top : 40px;
+	bottom : 5px;
+	right : 5px;
+	width : 50px;
+	border-radius : 5px;
+}
+
+#loginpage .close:hover{
+	background-color: rgb(190, 190, 190);
+	cursor: pointer;
+}
+
+
+.loginpage {
+	position :fixed;
+	top : 7px;
+	left : 95px;
+	background-color : rgba(120,120,128,0.9);
+	width : 300px;
+	height : 250px;
+	border-radius : 8px;
+	display : none;
+	
+}
+
+/*내 프로필 페이지*/
+
+
+.myprofilepage {
+	position :fixed;
+	top : 7px;
+	left : 95px;
+	background-color : rgba(120,120,128,0.9);
+	width : 300px;
+	height : 300px;
+	border-radius : 8px;
+	display : none;
+}
+
+.myprofilepagewrap {
+	display : flex;
+	flex-direction: column;
+}
+
+.myprofile {
+	display : flex;
+}
+
+.myprofilepagewrap{
+	height : 100%;
+}
+
+.myprofilepic {
+	width : 80px;
+	height : 80px;
+	border-radius : 8px;
+	margin : 8px;
+}
+
+.myprofilename {
+	padding-top : 40px;
+	font-size: 25px;
+}
+
+.myprofilecomment {
+	width : 96%;
+	height : 45%;
+	background-color : rgba(150,150,158,0.3);
+	margin : 0 auto;
+	border-radius : 8px;
+	text-align: left;
+	padding : 5px;
+}
+
+.myprofilemodifydate {
+	text-align: left;
+	margin-left : 14px;
+	font-size: 12px;
+}
+
+.changemyprofile {
+	margin : 5px 0;
+	margin-bottom : 0px;
+}
+
+.profileclose {
+	border : 1px solid black;
+	background-color: lightgray;
+	position : absolute;
+	margin-top : 40px;
+	bottom : 5px;
+	right : 5px;
+	width : 50px;
+	border-radius : 5px;
+}
+
+.profileclose:hover{
+	background-color: rgb(190, 190, 190);
+	cursor: pointer;
+}
+
+
+/*친구 프로필 페이지*/
+
+
+.frprofilepage{
+	position :fixed;
+	top : 7px;
+	left : 405px;
+	background-color : rgba(120,120,128,0.9);
+	width : 300px;
+	height : 300px;
+	border-radius : 8px;
+	display : none;
+}
+
+.frprofilepagewrap {
+	display : flex;
+	flex-direction: column;
+}
+
+.infrprofile {
+	display : flex;
+}
+
+.frprofilepagewrap{
+	height : 100%;
+}
+
+.frprofilepic {
+	width : 80px;
+	height : 80px;
+	border-radius : 8px;
+	margin : 8px;
+}
+
+.frprofilename {
+	padding-top : 40px;
+}
+
+.frprofilecomment {
+	width : 96%;
+	height : 45%;
+	background-color : rgba(150,150,158,0.3);
+	margin : 0 auto;
+	border-radius : 8px;
+	text-align: left;
+	padding : 5px;
+}
+
+.frprofilemodifydate {
+	text-align: left;
+	margin-left : 14px;
+	font-size: 12px;
+}
+
+
+.profileclose {
+	border : 1px solid black;
+	background-color: lightgray;
+	position : absolute;
+	margin-top : 40px;
+	bottom : 5px;
+	right : 5px;
+	width : 50px;
+	border-radius : 5px;
+}
+
+.profileclose:hover{
+	background-color: rgb(190, 190, 190);
+	cursor: pointer;
+}
+
+.chatfr {
+	background-color : rgb(190, 190, 190);
+	padding : 0 20px;
+	border : 1px solid rgb(230, 230, 230);
+}
+
+/*채팅 페이지*/
+.chatpage{
+	position :fixed;
+	top : 7px;
+	left : 405px;
+	background-color : rgba(120,120,128,0.9);
+	width : 400px;
+	height : 400px;
+	border-radius : 8px;
+	display : none;
+	overflow-Y : scroll;
+}
+
+.chathead {
+	width : 100%;
+	border-bottom : 1px solid black;
+	display : flex;
+	justify-content: space-between;
+}
+
+.chatwith {
+	margin-left : 10px;
+}
+
+.chatclose {
+	margin-right : 10px;
+}
+
+.chatclose:hover {
+	margin-right : 10px;
+	cursor : pointer;
+}
+
+.chatlog {
+	padding : 7px;
+}
+
+.chatinput {
+	position : absolute;
+	bottom : 0px;
+	width : 95%;
+	margin : 0 0 7px 10px;
+	padding-top : 7px;
+	border-top : 1px solid black;
+}
+
+.sendbyme {
+	display : flex;
+	justify-content: flex-end;
+	margin : 4px 0;
+}
+
+
+.sendbyyou {
+	display : flex;
+	margin : 4px 0;
+}
+
+.sendbyme .chattext {
+	background-color : yellow;
+	padding : 2px;
+	border-radius : 5px;
+	max-width : 49%;
+	text-align: left;
+	font-size: 14px;
+}
+
+.sendbyme .chatdate {
+	font-size: 12px;
+	padding-top : 9px;
+	margin : 0 5px;
+}
+
+.sendbyyou .chattext{
+	background-color : yellow;
+	padding : 2px;
+	border-radius : 5px;
+	max-width : 49%;
+	text-align: left;
+	font-size: 14px;
+}
+
+.sendbyyou .chatdate {
+	font-size: 12px;
+	padding-top : 9px;
+	margin : 0 5px;
+}
+
+.chatsend {
+	padding : 2px;
+}
+
+
+/*기타*/
+.fas{
+	font-size: 40px;
+	margin-top : 14px;
+}
+
+
+a {
+	text-decoration: none;
+	color : rgb(233, 232, 237);
+}
+
+
+/*상세창 메인내용*/
+.main_document {
+	margin : 10px;
+	text-align: left;
+	overflow : hidden;
+	height : 63.5%;
+}
+
+
+.plus {
+	font-size: 36px;
+	color : rgb(64, 64, 66);
+}
+
+
+/*사이드바 글리스트*/
+.docprofile {
+	 width : 80px;
+	 height : 80px;
+	 border-radius : 8px;
+	 pointer-events:none;
+}
+
+.doc_cont .makeinfo {
+	pointer-events:none;
+}
+
+.doc_cont .info_namebar{
+	display : flex;
+	justify-content: space-between;
+}
+
+.doc_cont .makeinfo .makerName {
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 3px;
+}
+
+.doc_cont .makeinfo .docNum {
+	transform : translate(40px, 25px);
+}
+
+/*사이드바 친구 리스트*/
+.frprofile {
+	 width : 80px;
+	 height : 80px;
+	 border-radius : 8px;
+	 pointer-events : none;
+}
+
+.sidebar .sidebar_btn{
+	width : 70px;
+	min-height : 70px;
+	margin : 4px;
+	background-color : rgb(67, 67, 73);
+	border : 1px white solid;
+	border-radius : 10px;
+	align-items : center;
+	transition:background-color 0.1s, border 0.2s;
+}
+
+.sidebar .sidebar_btn:hover {
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+.sidebar .sidebar_btn{
+    margin : 20px auto;
+}
+
+.sidebar .profilediv {
+    border-bottom: 2px white dashed;
+}
+
+.sidebar .sidebar_list{
+    height : 100%;
+    width : 330px;
+    margin-left : 0px;
+    background-color: rgb(67, 67, 73);
+    border: 3px solid rgb(55, 55, 55);
+    border-radius: 11px;
+    position : relative;
+}
+.sidebar_list .listcover {
+	height : 93.5%;
+	overflow-y : scroll; 
+}
+
+.buttons {
+    background-color: rgb(67, 67, 73);
+    width : 82px;
+    height : 100%;
+	min-width : 79px;
+	text-align: center;
+	border-top : none;
+	transition: 0.3s;
+}
+
+/*글 리스트*/
+.doc_list {
+	display : none;
+}
+
+.doc_cont {
+    background-color: rgb(67, 67, 73);
+    border: 3px solid rgb(55, 55, 55);
+    border-radius: 11px;
+    margin : 3px;
+    display : flex;
+}
+
+.docmores{
+    background-color: rgb(67, 67, 73);
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 11px;
+    margin : 3px;
+    display : flex;
+    padding : 5px;
+	padding-left:43%;
+}
+
+.docmores:hover{
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+.doc_cont .makername{
+    font-size: 25px;
+    margin-left : 3px;
+    pointer-events:none;
+    text-align: left;
+}
+
+.doc_cont .makingdate{
+    margin-top: 1px;
+    pointer-events:none;
+    text-align: left;
+    margin-left : 4px;
+}
+.doc_cont .contenttitle{
+    margin-left : 2px;
+    text-align: left;
+    font-size: 20px;
+    pointer-events:none;
+    text-align: left;
+}
+
+.sidebar .doc_cont{
+	margin : 4px;
+	background-color : rgb(67, 67, 73);
+	border : 1px white solid;
+	border-radius : 10px;
+	align-items : center;
+	transition:background-color 0.1s, border 0.2s;
+}
+
+.sidebar .doc_cont img {
+	margin-left : 4px;
+
+}
+
+.sidebar .doc_cont:hover {
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+
+/*메모 리스트*/
+.memo_list {
+	display : none;
+}
+
+.memomores{
+    background-color: rgb(67, 67, 73);
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 11px;
+    margin : 3px;
+    display : flex;
+    padding : 5px;
+	padding-left:43%;
+}
+
+.memomores:hover{
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+.memo_cont {
+    background-color: rgb(67, 67, 73);
+    border: 3px solid rgb(55, 55, 55);
+    border-radius: 11px;
+    margin : 3px;
+    display : flex;
+}
+
+.memo_cont .makeinfo {
+	margin-left : 5px;
+	padding-bottom : 5px;
+	pointer-events:none;
+	display : flex;
+	flex-direction: column;
+}
+
+.memo_cont .memoinnerinfo {
+	display : flex;
+}
+
+.memo_cont .makingdate{
+    margin-top: 1px;
+    pointer-events:none;
+    text-align: left;
+}
+.memo_cont .contenttitle{
+    margin-left : 2px;
+    text-align: left;
+    font-size: 25px;
+    pointer-events:none;
+}
+
+.memo_cont .memoNum{
+	height : 0;
+    margin-left : 2px;
+    text-align: left;
+    font-size: 20px;
+    pointer-events:none;
+    transform : translate(240px, -15px);
+}
+
+.sidebar .memo_cont{
+	margin : 4px;
+	background-color : rgb(67, 67, 73);
+	border : 1px white solid;
+	border-radius : 10px;
+	align-items : center;
+	transition:background-color 0.1s, border 0.2s;
+}
+
+.sidebar .memo_cont:hover {
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+/*친구 신청 리스트*/
+
+.askfriend_cont {
+    background-color: rgb(67, 67, 73);
+    border: 3px solid rgb(55, 55, 55);
+    border-radius: 11px;
+    margin : 3px;
+    display : flex;
+}
+
+.askfriend_cont .makeinfo{
+    width : 200px;
+}
+
+.sidebar .askfriend_cont{
+	margin : 4px;
+	background-color : rgb(67, 67, 73);
+	border : 1px white solid;
+	border-radius : 10px;
+	align-items : center;
+	transition:background-color 0.1s, border 0.2s;
+}
+
+.sidebar .askfriend_cont:hover {
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+.askfriend_cont .askname{
+    pointer-events:none;
+    padding-left : 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.askfriend_cont button {
+   padding : 0 6px;
+   margin : 10px 0px 0px 30px;
+   font-size: 17px;
+   background-color : rgb(55, 55, 61);
+}
+
+/*친구 신청 페이지*/
+.askfriendpage {
+	width : 300px;
+	height : 90px;
+	z-index : 999;
+	position : absolute;
+	bottom : 20px;
+	left : 420px;
+	background-color : rgba(122, 122, 122, 0.8);
+	align-content: center;
+	align-items: center;
+	display : none;
+	padding : 7px;
+	border-radius : 8px;
+}
+
+.askfriendpage input{
+	width : 220px;
+	font-size: 17px;
+	margin-top : 5px;
+}
+
+.askfriendpage button{
+	font-size: 15px;
+	height : 30px;
+	width : 55px;
+}
+/*친구 리스트*/
+.friend_list {
+	display : none;
+}
+
+.askfriendpage .askfriendpageclose{
+	position : absolute;
+	right : 12px;
+	bottom : 4px;
+	padding : 0;
+	height : 20px;
+}
+/*친구 리스트*/
+.friend_list {
+	display : none;
+}
+
+
+
+.friend_cont {
+    background-color: rgb(67, 67, 73);
+    border: 3px solid rgb(55, 55, 55);
+    border-radius: 11px;
+    margin : 3px;
+    display : flex;
+    width : 297px;
+}
+
+.friend_cont .makeinfo {
+	margin-left : 5px;
+	pointer-events:none;
+	
+}
+
+.friend_cont .makername{
+    font-size: 25px;
+    pointer-events:none;
+}
+
+.sidebar .friend_cont{
+	margin : 4px;
+	background-color : rgb(67, 67, 73);
+	border : 1px white solid;
+	border-radius : 10px;
+	align-items : center;
+	transition:background-color 0.1s, border 0.2s;
+}
+
+.sidebar .friendstatus {
+	text-align: left;
+	padding-top : 3px;
+}
+
+.sidebar .friend_cont img {
+	margin-left : 4px;
+
+}
+
+.sidebar .friend_cont:hover {
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+
+/*사이드바 아래쪽 글,친구,메모 추가, 필터 부분*/
+.undersidebar {
+	position : absolute;
+	bottom : 10px;
+	width : 100%;
+	height : 5%;
+}
+
+.addconts{
+	position : absolute;
+	right : 5px;
+	bottom : 0px;
+	background-color : gray;
+	padding : 5px 10px;
+	border-radius: 50%;
+}
+
+.addconts:hover{
+	cursor : pointer;
+}
+
+.filter input{
+	transform : translateX(-20px);
+}
+
+/*댓글 바*/
+.rsidebar {
+	height : 92%;
+	position : absolute;
+	right : 0px;
+	background-color: rgb(67, 67, 73);
+    border: 3px solid rgb(55, 55, 55);
+    border-radius: 11px;
+    width : 400px;
+    margin : 3px;
+    display : none;
+	flex-direction: column;
+	overflow-y : scroll;
+	transition: 0.2s;
+	flex-direction: row;
+	justify-content: space-between;
+	transform : translateX(380px);
+	margin-top : 0px;
+	overflow : hidden;
+}
+
+.repdate{
+	font-size: 17px;
+	padding-top : 4px;
+	padding-left : 10px;
+}
+
+.outH{
+	overflow : hidden;
+}
+
+.out {
+	transform : translateX(0px);
+}
+
+.repprofile {
+	 width : 35px;
+	 height : 35px;
+	 border-radius : 50%;
+}
+
+.deleterep {
+	 position : relative;
+	 left : 290px;
+	 width : 60px;
+	 font-size: 15px;
+}
+
+.rsidebar_btn{
+	width : 5%;
+	height : 97%;
+	text-align: center;
+	padding-top : 85%;
+	border-right : 1px dashed black;
+	padding-right : 2px;
+}
+
+.rsidebar_btn:hover{
+	cursor : pointer;
+}
+
+.realrep {
+	width : 95%;
+}
+
+.realrepcover {
+	height : 93.5%;
+	overflow-Y:scroll;
+	overflow-X:hidden;
+}
+
+.replistline {
+	display : flex;
+	margin : 4px;
+	margin-left : 5px;
+	background-color : rgb(67, 67, 73);
+	border : 1px solid rgb(67, 67, 73);
+	border-radius : 10px;
+	transition:background-color 0.1s, border 0.15s;
+	width : 97%;
+	flex-direction: column;
+	border : 1px dashed black;
+	border-bottom : 3px dashed black;
+	box-sizing: border-box;
+}
+
+.innerrep {
+	display : flex;
+	border-bottom : 2px dashed rgb(80, 80, 80);
+	width : 100%;
+}
+
+.innerrep .makeinfo {
+	display : flex;
+	justify-content: space-between;
+	width : 80%;
+}
+
+.innerrepcont {
+	margin-left : 7px;
+	padding-bottom : 5px;
+	font-size: 14px;
+	width : 95%;
+	border-bottom : 1px solid black;
+}
+
+.rsidebar .friendname {
+	font-size: 17px;
+	padding-top : 4px;
+	padding-left : 10px;
+}
+
+.rsidebar .replistline:hover {
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	border-bottom : 3px gray solid;
+	color : rgb(215, 215, 240);
+}
+
+.writerep {
+	position: absolute;
+	bottom:10px;
+	margin : 4px;
+	margin-left : 5px;
+	background-color : rgb(67, 67, 73);
+	border : 1px solid rgb(67, 67, 73);
+	border-radius : 10px;
+	transition:background-color 0.1s, border 0.15s;
+	width : 97%;
+	flex-direction: column;
+	border : 1px dashed black;
+	box-sizing: border-box;
+	height : 5%;
+}
+
+.deleterep:hover{
+	cursor: pointer;
+}
+.writerep:hover {
+	background-color : rgb(55, 55, 61);
+	border : 1px gray solid;
+	border-bottom : 3px gray solid;
+	cursor : pointer;
+	color : rgb(215, 215, 240);
+}
+
+.writerep input {
+	background-color : rgb(75, 75, 81);
+	margin : 5px;
+	width : 290px;
+}
+
+.writerep button {
+	border-radius : 8px;
+	background-color : rgb(55, 55, 61);
+	margin : 5px;
+	padding : 5px;
+}
+
+header .uncurl {
+	margin-left : 14px;
+	color : black;
+	transition: 0.3s;
+	margin-bottom : 5px;
+}
+
+header .uncurl:hover {
+	cursor : pointer;
+	transition: 0.3s;
+}
+
+header .curl {
+	margin-left : 14px;
+	color : black;
+	transform: rotate(-90deg);
+	margin-bottom : 5px;
+	transition: 0.3s;
+}
+
+header .curl:hover {
+	cursor : pointer;
+	transition: 0.3s;
+}
+
+
+/*글 작성 페이지*/
+.writedocpage {
+	width : 100vw;
+	height : 100vh;
+	z-index : 999;
+	position : absolute;
+	top : 0;
+	left : 0;
+	background-color : rgba(122, 122, 122, 0.8);
+	align-content: center;
+	align-items: center;
+	display : none;
+}
+
+.writedocpagewrap {
+	margin : 5% auto 0 auto;
+	background-color : rgb(80, 80, 80);
+	width : 80%;
+	height : 80%;
+	flex-direction: column;
+	padding-top : 60px;
+	align-content: center;
+	align-items: center;
+	position : relative;
+}
+.writedocform{
+	display : flex;
+	flex-direction : column;
+	height : 80%;
+}
+
+.writedoctitle {
+	margin : 0 auto;
+	width : 500px;
+}
+
+.writedoccontent {
+	margin : 15px auto;
+	width : 80%;
+	height : 90%;
+	padding : 15px;
+	font-size: 16px;
+	border-radius : 15px;
+}
+
+.writedocpic {
+	margin : 15px auto;
+	font-size: 16px;
+	border-radius : 15px;
+}
+
+.writedocpage button {
+	margin : 0 auto;
+	padding : 5px;
+	font-size: 17px;
+}
+.writedocpage .writedocpageclose {
+	margin : 0 auto;
+	position : absolute;
+	right : 8px;
+	bottom : 20px;
+}
+
+/*메모 작성 페이지 */
+.writememopage {
+	width : 100vw;
+	height : 100vh;
+	z-index : 999;
+	position : absolute;
+	top : 0;
+	left : 0;
+	background-color : rgba(122, 122, 122, 0.8);
+	align-content: center;
+	align-items: center;
+	display : none;
+}
+
+.writememopagewrap {
+	margin : 5% auto 0 auto;
+	background-color : rgb(80, 80, 80);
+	width : 80%;
+	height : 80%;
+	flex-direction: column;
+	padding-top : 60px;
+	align-content: center;
+	align-items: center;
+	position : relative;
+}
+.writememoform{
+	display : flex;
+	flex-direction : column;
+	height : 80%;
+}
+
+.writememotitle {
+	margin : 0 auto;
+	width : 500px;
+}
+
+.writememocontent {
+	margin : 15px auto;
+	width : 80%;
+	height : 90%;
+	padding : 15px;
+	font-size: 16px;
+	border-radius : 15px;
+}
+
+.writememopic {
+	margin : 15px auto;
+	font-size: 16px;
+	border-radius : 15px;
+}
+
+.writememopage button {
+	margin : 0 auto;
+	padding : 5px;
+	font-size: 17px;
+}
+.writememopage .writememopageclose {
+	margin : 0 auto;
+	position : absolute;
+	right : 8px;
+	bottom : 20px;
+}
+
+/*1178 이하일 경우 섹션 위치조정*/
+@media screen and (max-width : 1178px) {
+	.sebu {
+		min-height : 350px;
+		max-height : 92%;
+		height : 92%;
+		width : 630px;
+		border : 3px solid rgb(55, 55, 55);
+		text-align: center;
+		margin : 0 auto;
+		position : absolute;
+		left : 50%;
+		transform : translateX(-50%);
+		border-radius : 10px;
+		transition: 0.3s;
+		max-height: 870px;
+		box-sizing: border-box;
+	}
+}
+
+/*1460 이하 1178 이상 일 경우 오른쪽 창 제거, 섹션 위치조정*/
+@media screen and (max-width : 1460px) and (min-width : 1178px) {
+		.sebu {
+			min-height : 350px;
+			height : 92%;
+			max-width : 630px;
+			border : 3px solid rgb(55, 55, 55);
+			text-align: center;
+			margin : 0 auto;
+			position : absolute;
+			left : 63.5%;
+			transform : translateX(-50%);
+			border-radius : 10px;
+			transition: 0.3s;
+	}
+}
+
+@media screen and (min-width : 1178px) {
+#topni{
+	display:none;
+}
+	}	
+	
+	
+.factive{
+	display : flex;
+}
+
+.bactive{
+	display : block;
+}
+
+* .factive{
+	display : flex;
+}
+
+* .bactive{
+	display : block;
+}
+
+*::selection {
+	background-color : lightgray;
+}
