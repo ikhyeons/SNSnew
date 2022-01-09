@@ -1122,15 +1122,6 @@ window.addEventListener('mouseup', function(){
 		for(i=0; i<mpica.length; i++){
 			widthsum = widthsum + mpica[i].width + 7; // 7은 마진의 크기
 		}
-	if(-insnum >= -mpica[0].width/1.4){
-		memopicline.style.left = `0px`;
-		memopicline.style.transform = `translate(0px)`;
-	}
-
-	else if(-insnum <=  -widthsum + mpica[mpica.length-1].width/1.4){
-		memopicline.style.left = `630px`;
-		memopicline.style.transform = `translate(-${widthsum}px)`;
-	}
 	}
 })
 }

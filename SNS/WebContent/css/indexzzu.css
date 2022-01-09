@@ -3,6 +3,10 @@
 	padding : 0;
 	box-sizing: border-box;
 }
+a:hover{
+	text-decoration: none;
+	color : rgb(0, 0, 0);
+}
 p{
 	margin : 0;
 }
@@ -20,7 +24,7 @@ textarea {
 
 
 body{
-	background-color : rgb(80,80,85);
+	background-color : rgb(250,240,225);
 }
 
 .bodywrap {
@@ -36,7 +40,7 @@ header {
 	font-weight: bold;
 	font-size: 20px;
 	min-height: 58px;
-	background-color: rgb(67, 67, 73);
+	background-color: rgb(229, 208, 173);
 	color : rgb(244, 239, 255);
 	display : flex;
 	z-index : 50;
@@ -80,12 +84,13 @@ header a {
 }
 
 .docsectionwrap .titlebar {
-	background-color: rgb(67, 67, 73);
+	background-color: rgb(201, 175, 179);
 	padding : 5px;
 	font-weight: bold;
 	text-align: left;
 	padding-left : 30px;
 	font-size: 25px;
+	border-radius : 7px 7px 0px 0px;
 	border-bottom : dashed rgb(50, 50, 55) 2px;
 	display : flex;
 	justify-content: space-between;
@@ -261,7 +266,7 @@ button:hover {
 	}
 	
 	.memoform .titlebar {
-	background-color: rgb(67, 67, 73);
+	background-color: rgb(201, 175, 179);
 	padding : 5px;
 	font-weight: bold;
 	text-align: left;
@@ -301,7 +306,6 @@ button:hover {
 
 .memoform .memodoc {
 	height : 55%;
-	background-color : rgb(104, 104, 116);
 	overflow-Y : scroll;
 	text-align: left;
 	padding : 4px;
@@ -337,7 +341,7 @@ button:hover {
 }
 
 .joinform .titlebar {
-	background-color: rgb(67, 67, 73);
+	background-color: rgb(201, 175, 179);
 	padding : 5px;
 	font-weight: bold;
 	text-align: left;
@@ -437,7 +441,7 @@ button:hover {
 }
 
 .changeprofileform .titlebar {
-	background-color: rgb(67, 67, 73);
+	background-color: rgb(201, 175, 179);
 	padding : 5px;
 	font-weight: bold;
 	text-align: left;
@@ -454,7 +458,7 @@ button:hover {
 	height : 92%;
 	min-width : 79px;
 	text-align: center;
-	background-color:rgb(80, 80, 85);
+	background-color:rgb(245, 235, 220);
 	border-top : none;
 	position : absolute;
 	left : 0px;
@@ -554,7 +558,7 @@ input {
 	position :fixed;
 	top : 7px;
 	left : 95px;
-	background-color : rgba(120,120,128,0.9);
+	background-color : rgba(179, 176, 178,0.98);
 	width : 300px;
 	height : 250px;
 	border-radius : 8px;
@@ -569,7 +573,7 @@ input {
 	position :fixed;
 	top : 7px;
 	left : 95px;
-	background-color : rgba(120,120,128,0.9);
+	background-color : rgba(179, 176, 178,0.98);
 	width : 300px;
 	height : 300px;
 	border-radius : 8px;
@@ -579,6 +583,11 @@ input {
 .myprofilepagewrap {
 	display : flex;
 	flex-direction: column;
+}
+
+.note-editor {
+	width : 95%;
+	margin : 0 auto;
 }
 
 .myprofile {
@@ -646,7 +655,7 @@ input {
 	position :fixed;
 	top : 7px;
 	left : 405px;
-	background-color : rgba(120,120,128,0.9);
+	background-color : rgba(179, 176, 178,0.98);
 	width : 300px;
 	height : 300px;
 	border-radius : 8px;
@@ -721,7 +730,7 @@ input {
 	position :fixed;
 	top : 7px;
 	left : 405px;
-	background-color : rgba(120,120,128,0.9);
+	background-color : rgba(179, 176, 178, 0.98);
 	width : 400px;
 	height : 400px;
 	border-radius : 8px;
@@ -839,8 +848,8 @@ a {
 
 /*사이드바 글리스트*/
 .docprofile {
-	 width : 80px;
-	 height : 80px;
+	 width : 70px;
+	 height : 70px;
 	 border-radius : 8px;
 	 pointer-events:none;
 }
@@ -867,8 +876,8 @@ a {
 
 /*사이드바 친구 리스트*/
 .frprofile {
-	 width : 80px;
-	 height : 80px;
+	 width : 70px;
+	 height : 70px;
 	 border-radius : 8px;
 	 pointer-events : none;
 }
@@ -877,7 +886,7 @@ a {
 	width : 70px;
 	min-height : 70px;
 	margin : 4px;
-	background-color : rgb(67, 67, 73);
+	background-color : rgb(201, 185, 189);
 	border : 1px white solid;
 	border-radius : 10px;
 	align-items : center;
@@ -885,7 +894,7 @@ a {
 }
 
 .sidebar .sidebar_btn:hover {
-	background-color : rgb(55, 55, 61);
+	background-color : rgb(181, 155, 155);
 	border : 1px gray solid;
 	cursor : pointer;
 	color : rgb(215, 215, 240);
@@ -903,8 +912,8 @@ a {
     height : 100%;
     width : 330px;
     margin-left : 0px;
-    background-color: rgb(67, 67, 73);
-    border: 3px solid rgb(55, 55, 55);
+    background-color: rgb(235, 225, 215);
+    border: 3px solid rgb(255, 255, 238);
     border-radius: 11px;
     position : relative;
 }
@@ -914,7 +923,7 @@ a {
 }
 
 .buttons {
-    background-color: rgb(67, 67, 73);
+    background-color: rgb(234, 213, 178);
     width : 82px;
     height : 100%;
 	min-width : 79px;
@@ -929,7 +938,7 @@ a {
 }
 
 .doc_cont {
-    background-color: rgb(67, 67, 73);
+    background-color: rgb(230, 220, 210);
     border: 3px solid rgb(55, 55, 55);
     border-radius: 11px;
     margin : 3px;
@@ -975,7 +984,7 @@ a {
 
 .sidebar .doc_cont{
 	margin : 4px;
-	background-color : rgb(67, 67, 73);
+	background-color: rgb(230, 220, 210);
 	border : 1px white solid;
 	border-radius : 10px;
 	align-items : center;
@@ -988,10 +997,9 @@ a {
 }
 
 .sidebar .doc_cont:hover {
-	background-color : rgb(55, 55, 61);
+	background-color: rgb(227, 212, 202);
 	border : 1px gray solid;
 	cursor : pointer;
-	color : rgb(215, 215, 240);
 }
 
 
@@ -1018,7 +1026,7 @@ a {
 }
 
 .memo_cont {
-    background-color: rgb(67, 67, 73);
+    background-color: rgb(230, 220, 210);
     border: 3px solid rgb(55, 55, 55);
     border-radius: 11px;
     margin : 3px;
@@ -1060,7 +1068,7 @@ a {
 
 .sidebar .memo_cont{
 	margin : 4px;
-	background-color : rgb(67, 67, 73);
+	background-color: rgb(230, 220, 210);
 	border : 1px white solid;
 	border-radius : 10px;
 	align-items : center;
@@ -1068,16 +1076,15 @@ a {
 }
 
 .sidebar .memo_cont:hover {
-	background-color : rgb(55, 55, 61);
+	background-color: rgb(227, 212, 202);
 	border : 1px gray solid;
 	cursor : pointer;
-	color : rgb(215, 215, 240);
 }
 
 /*친구 신청 리스트*/
 
 .askfriend_cont {
-    background-color: rgb(67, 67, 73);
+    background-color: rgb(220, 220, 200);
     border: 3px solid rgb(55, 55, 55);
     border-radius: 11px;
     margin : 3px;
@@ -1090,7 +1097,7 @@ a {
 
 .sidebar .askfriend_cont{
 	margin : 4px;
-	background-color : rgb(67, 67, 73);
+	background-color: rgb(235, 235, 220);
 	border : 1px white solid;
 	border-radius : 10px;
 	align-items : center;
@@ -1098,10 +1105,9 @@ a {
 }
 
 .sidebar .askfriend_cont:hover {
-	background-color : rgb(55, 55, 61);
+	background-color : rgb(220, 220, 200);
 	border : 1px gray solid;
 	cursor : pointer;
-	color : rgb(215, 215, 240);
 }
 
 .askfriend_cont .askname{
@@ -1165,7 +1171,7 @@ a {
 
 
 .friend_cont {
-    background-color: rgb(67, 67, 73);
+    background-color: rgb(230, 220, 210);
     border: 3px solid rgb(55, 55, 55);
     border-radius: 11px;
     margin : 3px;
@@ -1186,7 +1192,7 @@ a {
 
 .sidebar .friend_cont{
 	margin : 4px;
-	background-color : rgb(67, 67, 73);
+	background-color: rgb(230, 220, 210);
 	border : 1px white solid;
 	border-radius : 10px;
 	align-items : center;
@@ -1204,10 +1210,9 @@ a {
 }
 
 .sidebar .friend_cont:hover {
-	background-color : rgb(55, 55, 61);
+	background-color: rgb(227, 212, 202);
 	border : 1px gray solid;
 	cursor : pointer;
-	color : rgb(215, 215, 240);
 }
 
 
@@ -1221,10 +1226,11 @@ a {
 
 .addconts{
 	position : absolute;
-	right : 5px;
+	width : 35px;
+	right : 10px;
 	bottom : 0px;
-	background-color : gray;
-	padding : 5px 10px;
+	background-color : rgb(225, 215, 200);
+	padding : 8px 10px;
 	border-radius: 50%;
 }
 
@@ -1241,7 +1247,7 @@ a {
 	height : 92%;
 	position : absolute;
 	right : 0px;
-	background-color: rgb(67, 67, 73);
+	background-color: rgb(223, 200, 167);
     border: 3px solid rgb(55, 55, 55);
     border-radius: 11px;
     width : 400px;
@@ -1291,6 +1297,7 @@ a {
 	padding-top : 85%;
 	border-right : 1px dashed black;
 	padding-right : 2px;
+	background-color: rgb(229, 208, 173);
 }
 
 .rsidebar_btn:hover{
@@ -1311,14 +1318,12 @@ a {
 	display : flex;
 	margin : 4px;
 	margin-left : 5px;
-	background-color : rgb(67, 67, 73);
-	border : 1px solid rgb(67, 67, 73);
+	background-color : rgb(230, 230, 220);
 	border-radius : 10px;
 	transition:background-color 0.1s, border 0.15s;
 	width : 97%;
 	flex-direction: column;
-	border : 1px dashed black;
-	border-bottom : 3px dashed black;
+	border : 1px solid;
 	box-sizing: border-box;
 }
 
@@ -1336,7 +1341,6 @@ a {
 
 .innerrepcont {
 	margin-left : 7px;
-	padding-bottom : 5px;
 	font-size: 14px;
 	width : 95%;
 	border-bottom : 1px solid black;
@@ -1344,15 +1348,13 @@ a {
 
 .rsidebar .friendname {
 	font-size: 17px;
-	padding-top : 4px;
-	padding-left : 10px;
+	padding-top : 3px;
+	padding-left : 2px;
 }
 
 .rsidebar .replistline:hover {
-	background-color : rgb(55, 55, 61);
+	background-color : rgb(230, 225, 215);
 	border : 1px gray solid;
-	border-bottom : 3px gray solid;
-	color : rgb(215, 215, 240);
 }
 
 .writerep {
@@ -1360,13 +1362,10 @@ a {
 	bottom:10px;
 	margin : 4px;
 	margin-left : 5px;
-	background-color : rgb(67, 67, 73);
-	border : 1px solid rgb(67, 67, 73);
-	border-radius : 10px;
+	background-color : rgb(223, 200, 167);
 	transition:background-color 0.1s, border 0.15s;
 	width : 97%;
 	flex-direction: column;
-	border : 1px dashed black;
 	box-sizing: border-box;
 	height : 5%;
 }
@@ -1374,16 +1373,9 @@ a {
 .deleterep:hover{
 	cursor: pointer;
 }
-.writerep:hover {
-	background-color : rgb(55, 55, 61);
-	border : 1px gray solid;
-	border-bottom : 3px gray solid;
-	cursor : pointer;
-	color : rgb(215, 215, 240);
-}
 
 .writerep input {
-	background-color : rgb(75, 75, 81);
+	background-color : rgb(255, 255, 255);
 	margin : 5px;
 	width : 290px;
 }
@@ -1433,6 +1425,7 @@ header .curl:hover {
 	align-content: center;
 	align-items: center;
 	display : none;
+	border-radius : 10px;
 }
 
 .writedocpagewrap {
@@ -1441,10 +1434,11 @@ header .curl:hover {
 	width : 80%;
 	height : 80%;
 	flex-direction: column;
-	padding-top : 60px;
+	padding-top : 30px;
 	align-content: center;
 	align-items: center;
 	position : relative;
+	border-radius : 10px;
 }
 .writedocform{
 	display : flex;
@@ -1453,8 +1447,8 @@ header .curl:hover {
 }
 
 .writedoctitle {
-	margin : 0 auto;
-	width : 500px;
+	margin : 10px auto;
+	width : 95%;
 }
 
 .writedoccontent {
@@ -1609,4 +1603,8 @@ header .curl:hover {
 
 *::selection {
 	background-color : lightgray;
+}
+
+.modal-backdrop {
+	z-index : -1;
 }
